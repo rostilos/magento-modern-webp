@@ -121,5 +121,5 @@ Logs will be available in [m2-root]/var/log/[webp.info.log|webp.error.log]
 It is also suggested to add webp-convert-all script to crontab to automatically generate new images
 
 <h2>Docs</h2>
-https://breezefront.com/docs/next-gen-images
-https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize
+<p>https://breezefront.com/docs/next-gen-images</p>
+<p>https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize</p>
