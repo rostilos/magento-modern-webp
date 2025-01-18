@@ -19,7 +19,6 @@ The example for warden is in the m2-warden directory of the repository
 
 <h4>For nginx</h4>
 ```
-.......
 # create cache for resized images
 proxy_cache_path /tmp/nginx-catalog-media-cache/
     levels=1:2
@@ -99,17 +98,15 @@ server {
         image_filter_webp_quality 75;
     }
 }
-....
 ```
 
-```....
+```
 location /media/ {
     location ~* ^/media/catalog/.* {
         proxy_pass http://$image_resize_stream;
         proxy_cache catalog_media;
         proxy_cache_valid 200 24h;
     }
-......
 ```
 <h2>Run scripts</h2>
 `./webp-convert-all.sh`  - Conversion of all pictures.
