@@ -8,6 +8,7 @@ And you also need to set the execution rights
 
 <h3>Magento 2 settings</h3>
 It is also necessary to set the corresponding configuration in M2 (in order to add the resize parameters to the URL instead of the link to the cached file resize).
+
 ```
 bin/magento config:set web/url/catalog_media_url_format image_optimization_parameters && \
 bin/magento cache:clean
@@ -17,6 +18,7 @@ bin/magento cache:clean
 The example for warden is in the m2-warden directory of the repository
 
 <h4>For nginx</h4>
+
 ```
 # create cache for resized images
 proxy_cache_path /tmp/nginx-catalog-media-cache/
@@ -108,12 +110,12 @@ location /media/ {
     }
 ```
 <h2>Run scripts</h2>
-`./webp-convert-all.sh`  - Conversion of all pictures.
+`./webp-convert-all.sh  - Conversion of all pictures.
 
-`./webp-remove-all.sh` - Deletion of all converted images via the script
+./webp-remove-all.sh - Deletion of all converted images via the script
 
 <h3>Logs</h3>
-Logs will be available in `<m2-root>/var/log/[webp.info.log|webp.error.log]`
+Logs will be available in [m2-root]/var/log/[webp.info.log|webp.error.log]
 
 <h3>Continuous execution</h3>
 It is also suggested to add webp-convert-all script to crontab to automatically generate new images
