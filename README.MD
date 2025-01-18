@@ -3,8 +3,7 @@ Scripts for generating webp images, as well as incremental generation. Designed 
 <h2>Installation :</h2>
 
 <h3>It is necessary to add files to the correct directory</h3>
-By default
-`<m2-root>/scripts`.
+By default [m2-root]/scripts.
 And you also need to set the execution rights
 
 <h3>Magento 2 settings</h3>
